@@ -16,7 +16,7 @@
         <log4j.version>1.2.17</log4j.version>
         <java.version>1.8</java.version>
         <reflections.version>0.9.11</reflections.version>
-        <commons.langs3.version>3.8</commons.langs3.version>
+        <commons.lang3.version>3.8</commons.lang3.version>
         <gauge.version>0.6.9</gauge.version>
         <guava.version>23.0</guava.version>
     </properties>
@@ -92,14 +92,6 @@
             <artifactId>gauge-java</artifactId>
             <version>${gauge.version}</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
-        <dependency>
-            <groupId>org.reflections</groupId>
-            <artifactId>reflections</artifactId>
-            <version>${reflections.version}</version>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -107,12 +99,30 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.7.0</version>
+                <version>3.5.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>com.thoughtworks.gauge.maven</groupId>
+                <artifactId>gauge-maven-plugin</artifactId>
+                <version>1.4.0</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <configuration>
+                            <specsDir>specs</specsDir>
+                        </configuration>
+                        <goals>
+                            <goal>execute</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 
