@@ -5,5 +5,5 @@ Gauge mobile enum element example
 - Özellikle Page Object yapısı kullanılmayan, steplerini tek spec dosyası üzerinde tutan projeler için hazırlanmıştır !
 
 
-Not : Constantlar isimlendirilirken unique olmasına dikkat edilmeli. 
+Not : Constantlar isimlendirilirken şimdilik unique olmasına dikkat edilmeli.
       (Örn : L_USERNAME benzeri bir isimlendirme yapılabilir)
