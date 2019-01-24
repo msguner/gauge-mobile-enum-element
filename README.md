@@ -6,4 +6,4 @@ Gauge mobile enum element example
 
 
 Not : Constantlar isimlendirilirken şimdilik unique olmasına dikkat edilmeli.
-      (Örn : L_USERNAME benzeri bir isimlendirme yapılabilir)
+      (Örn : Login sayfasındaki username inputu için 'L_USERNAME' benzeri bir isimlendirme yapılabilir)
