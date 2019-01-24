@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class DriverFactory {
 
     public static String APP_PACKAGE = "com.getir.getirtestingcasestudy";
-    protected static AppiumDriver<MobileElement> driver = null;
+    private static AppiumDriver<MobileElement> driver = null;
     private static boolean androidTest = true;
     private static Logger LOGGER = Logger.getLogger(DriverFactory.class);
 

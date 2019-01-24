@@ -34,7 +34,7 @@ public class ConstantHelper {
      * @param enumName
      * @return
      */
-    public static <T extends Enum<T>> boolean isExistEnum(Class<T> enumClass, String enumName) {
+    private static <T extends Enum<T>> boolean isExistEnum(Class<T> enumClass, String enumName) {
         for (T c : enumClass.getEnumConstants()) {
             if (c.toString().equals(enumName)) {
                 return true;
