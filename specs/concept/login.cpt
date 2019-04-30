@@ -1,0 +1,4 @@
+# User logs in using username as <username> and password as <password>
+* Sendkey <username> to "USERNAME"
+* Sendkey <password> to "PASSWORD"
+* Click to "LOGIN_BUTTON"
