@@ -16,7 +16,7 @@
         <log4j.version>1.2.17</log4j.version>
         <java.version>1.8</java.version>
         <reflections.version>0.9.11</reflections.version>
-        <commons.lang3.version>3.8</commons.lang3.version>
+        <commons.lang3.version>3.18.0</commons.lang3.version>
         <gauge.version>0.6.9</gauge.version>
         <guava.version>23.0</guava.version>
         <device.information.version>1.0</device.information.version>
